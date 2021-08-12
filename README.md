@@ -70,7 +70,7 @@ fernet_key = Uasdflkj2340987435lkj-asdg=
 airflow db init
 ```
 ### Airflow Services
-For airflow to start automatically after restart we need to create services.
+For airflow to start automatically after restart we need to create services (under /etc/systemd/system).
 #### airflow-scheduler.service
 ```sh
 [Unit]
