@@ -12,7 +12,12 @@ useradd airflow
 export AIRFLOW_HOME=/data/airflow
 ```
 ## PostgreSQL
-follow the steps [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-postgresql-configuration_examples) to install Postgres on linux with different db paths.
+Install postgresql by running:
+'''sh
+yum install postgresql-server
+'''
+
+Then follow the steps [here](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/selinux_users_and_administrators_guide/sect-managing_confined_services-postgresql-configuration_examples) to install Postgres on linux with different db paths.
 Once installed, connect to postgres using psql (su - postgres first) and create Airflow DB and user.
 ```sql
 CREATE DATABASE airflow_db;
